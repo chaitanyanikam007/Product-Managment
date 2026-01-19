@@ -1,0 +1,19 @@
+<p>edit-product works!</p>
+<h2>Edit Product</h2>
+
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+
+  <input type="text" placeholder="Name" formControlName="name">
+  <br><br>
+
+  <textarea placeholder="Description" formControlName="description"></textarea>
+  <br><br>
+
+  <input type="number" placeholder="Price" formControlName="price">
+  <br><br>
+
+  <button type="submit" [disabled]="loading">
+    {{ loading ? 'Updating...' : 'Update Product' }}
+  </button>
+
+</form>

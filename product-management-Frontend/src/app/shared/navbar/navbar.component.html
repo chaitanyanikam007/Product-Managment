@@ -1,0 +1,6 @@
+<p>navbar works!</p>
+<nav *ngIf="auth.isLoggedIn()">
+  <a routerLink="/products">Products</a>
+  <a routerLink="/products/add">Add Product</a>
+  <button (click)="logout()">Logout</button>
+</nav>

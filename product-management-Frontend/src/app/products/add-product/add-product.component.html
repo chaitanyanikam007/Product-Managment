@@ -1,0 +1,12 @@
+<p>add-product works!</p>
+<h2>Add Product</h2>
+
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+
+  <input type="text" placeholder="Name" formControlName="name">
+  <textarea placeholder="Description" formControlName="description"></textarea>
+  <input type="number" placeholder="Price" formControlName="price">
+
+  <button type="submit">Save</button>
+
+</form>
