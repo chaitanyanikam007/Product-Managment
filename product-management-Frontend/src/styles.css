@@ -1,0 +1,31 @@
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+nav {
+  background: #222;
+  padding: 10px;
+}
+
+nav a, nav button {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+}
